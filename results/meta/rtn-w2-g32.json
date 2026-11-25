@@ -1,0 +1,18 @@
+{
+ "base": "openai/gpt-oss-20b",
+ "bits": 2,
+ "method": "RTN asym min-max",
+ "group_size": 32,
+ "quantized": "MoE expert gate_up_proj + down_proj only",
+ "tensors": 48,
+ "weight_rel_err_vs_native": {
+  "median": 0.4217882454395294,
+  "max": 0.4294476807117462,
+  "min": 0.4125782251358032
+ },
+ "max_distinct_values_per_group": 4,
+ "versions": {
+  "torch": "2.8.0+cu128",
+  "transformers": "4.56.2"
+ }
+}

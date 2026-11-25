@@ -1,0 +1,29 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+# fetched / rebuilt, not committed (see scripts/fetch_data.sh)
+third_party/
+data/*
+!data/SHA256SUMS
+# model responses are a GitHub Release asset (see scripts/fetch_responses.sh)
+responses/
+responses_excluded/
+# this release covers gpt-oss-20b only
+*qwen*
+ihc/configs/models.yaml
+ihc/quantize_modal.py
+results/clean_subset/
+results/figs/oss_eqat_training.png
+_archive_pre_release/
+release/
+# supplementary analyze.py outputs: current copies still include the Qwen runs; regenerate with `make all`
+results/cells.csv
+results/delta_vs_base.csv
+results/noise_floor.csv
+results/headline.csv
+results/gap.csv
+results/did.csv
+results/regression.txt
+results/figs/compliance_vs_depth_*
+results/figs/accuracy_vs_bits_*

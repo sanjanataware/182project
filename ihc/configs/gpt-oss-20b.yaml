@@ -1,0 +1,100 @@
+# gpt-oss-20b on the same eval set (depth 0 first). Run on H100:
+#   python ihc/launch.py --config ihc/configs/gpt-oss-20b.yaml --gpu H100 --input eval_test_d0.jsonl \
+#       --precisions native
+#
+# Differences from the Qwen configs, all forced by the model:
+#  * Chat format is OpenAI "harmony". The template turns IHEval's system prompt into the DEVELOPER
+#    message and writes its own system message (identity, date, reasoning level). In gpt-oss's
+#    trained hierarchy developer still outranks user, so the conflict test means the same thing.
+#  * The template stamps today's date into the prompt; fixed_date pins it for reproducibility.
+#  * Reasoning comes back in the "analysis" channel and the answer in the "final" channel, so
+#    special tokens are kept (skip_special_tokens: false) and generate.py parses the channels.
+#    No final channel within max_tokens -> think_unfinished (scored as a failure), as for Qwen.
+#  * Sampling: OpenAI's recommended temperature 1.0 / top_p 1.0 (Qwen used Qwen's recommended).
+#  * Precision: the MoE expert weights ship in MXFP4 (~4.25 bit, trained for it); attention,
+#    router and embeddings are bf16. Upcasting to bf16 is exact, so "native" IS the full-precision
+#    model. A quantization sweep for this model goes DOWN from native (see README / notes).
+
+model_name: gpt-oss-20b
+tokenizer: openai/gpt-oss-20b
+
+decoding:
+  format: harmony
+  reasoning_effort: medium
+  fixed_date: "2026-01-01"
+  skip_special_tokens: false
+  enable_thinking: true      # unused by the harmony template; kept so reasoning is expected
+  temperature: 1.0
+  top_p: 1.0
+  top_k: -1
+  min_p: 0.0
+  max_tokens: 8192
+  max_model_len: 20480
+  seeds: [0, 1]
+
+precisions:
+  native:
+    path: openai/gpt-oss-20b
+    dtype: auto
+  # Simulated expert quantization (ihc/quantize_oss_modal.py). All served as dense bf16 by the same
+  # vLLM kernels, so `bf16` (exact upcast of the native weights) is the baseline for these levels;
+  # `native` above (MXFP4 kernels) vs `bf16` checks that the serving path changes nothing.
+  bf16:
+    path: /ckpt/gpt-oss-20b-bf16
+    dtype: bfloat16
+  rtn_w4:
+    path: /ckpt/gpt-oss-20b-rtn-w4-g32
+    dtype: bfloat16
+  rtn_w3:
+    path: /ckpt/gpt-oss-20b-rtn-w3-g32
+    dtype: bfloat16
+  rtn_w2:
+    path: /ckpt/gpt-oss-20b-rtn-w2-g32
+    dtype: bfloat16
+  # In-between points (same RTN, different group size) to locate the 3-bit -> 2-bit cliff.
+  rtn_w3_g192:
+    path: /ckpt/gpt-oss-20b-rtn-w3-g192
+    dtype: bfloat16
+  rtn_w2_g16:
+    path: /ckpt/gpt-oss-20b-rtn-w2-g16
+    dtype: bfloat16
+  rtn_w2_g8:
+    path: /ckpt/gpt-oss-20b-rtn-w2-g8
+    dtype: bfloat16
+  # GPTQ on the same grids (ihc/quantize_oss_modal.py --gptq): only the rounding differs from rtn_*.
+  gptq_w3:
+    path: /ckpt/gpt-oss-20b-gptq-w3-g32
+    dtype: bfloat16
+  gptq_w3_g192:
+    path: /ckpt/gpt-oss-20b-gptq-w3-g192
+    dtype: bfloat16
+  gptq_w2_g16:
+    path: /ckpt/gpt-oss-20b-gptq-w2-g16
+    dtype: bfloat16
+  gptq_w2:
+    path: /ckpt/gpt-oss-20b-gptq-w2-g32
+    dtype: bfloat16
+  # Calibration-source experiment: GPTQ 2b g32, identical except for the calibration data.
+  gptq_w2_cal_iheval:
+    path: /ckpt/gpt-oss-20b-gptq-w2-g32-cal-iheval
+    dtype: bfloat16
+  gptq_w2_cal_syschat:
+    path: /ckpt/gpt-oss-20b-gptq-w2-g32-cal-syschat
+    dtype: bfloat16
+  gptq_w2_cal_nosys:
+    path: /ckpt/gpt-oss-20b-gptq-w2-g32-cal-chat_nosys
+    dtype: bfloat16
+  # EfficientQAT (Block-AP + E2E-QP) on the same 2b g32 grid; C4 vs system-prompt chats.
+  eqat_w2:
+    path: /ckpt/gpt-oss-20b-eqat-w2-g32-cal-c4
+    dtype: bfloat16
+  eqat_w2_cal_syschat:
+    path: /ckpt/gpt-oss-20b-eqat-w2-g32-cal-syschat
+    dtype: bfloat16
+  # Ablation: EfficientQAT stopped after Block-AP (reconstruction only, no next-token training).
+  blockap_w2:
+    path: /ckpt/gpt-oss-20b-blockap-w2-g32-cal-c4
+    dtype: bfloat16
+  blockap_w2_cal_syschat:
+    path: /ckpt/gpt-oss-20b-blockap-w2-g32-cal-syschat
+    dtype: bfloat16

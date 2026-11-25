@@ -1,0 +1,17 @@
+# Laptop: rebuild the eval set, score, analyze, plot (Python 3.11). Versions used for the paper.
+numpy==2.4.6
+pandas==3.1.1
+pyyaml==6.0.4
+matplotlib==3.11.2
+statsmodels==0.15.0
+# IHEval checker deps
+rouge-score==0.1.2
+langdetect==1.0.9
+nltk==3.10.4
+immutabledict==4.3.1
+absl-py==2.5.1
+termcolor==3.3.0
+colorama==0.4.6
+# GPU stages (quantization, generation, held-out loss) run on Modal; their images pin
+# torch==2.8.0, transformers==4.56.2, vllm==0.10.2 (see ihc/quantize_oss_modal.py, ihc/modal_app.py)
+modal==1.6.4

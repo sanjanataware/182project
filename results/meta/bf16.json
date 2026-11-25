@@ -1,0 +1,18 @@
+{
+ "base": "openai/gpt-oss-20b",
+ "bits": "bf16 (exact upcast of native MXFP4)",
+ "method": "none",
+ "group_size": null,
+ "quantized": "MoE expert gate_up_proj + down_proj only",
+ "tensors": 48,
+ "weight_rel_err_vs_native": {
+  "median": 0.0,
+  "max": 0.0,
+  "min": 0.0
+ },
+ "max_distinct_values_per_group": null,
+ "versions": {
+  "torch": "2.8.0+cu128",
+  "transformers": "4.56.2"
+ }
+}

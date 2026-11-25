@@ -1,0 +1,5 @@
+# Only needed to run generation outside Modal, on your own CUDA machine.
+-r requirements.txt
+vllm==0.10.2
+transformers==4.56.2
+jinja2

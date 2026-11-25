@@ -1,0 +1,56 @@
+{
+ "description": "Held-out next-token loss (nats/token), 16 x 2048-token held-out chunks, seed 0. c4 = C4 documents joined with <|endoftext|> (flawed: gpt-oss degenerates after a mid-sequence <|endoftext|>; kept for the record); c4nl = C4 joined with blank lines (the value reported in the paper); syschat = smoltalk systemchats in harmony format, all tokens. Produced by: modal run ihc/quantize_oss_modal.py --ce <comma-separated checkpoint paths>",
+ "results": {
+  "/ckpt/gpt-oss-20b-bf16": {
+   "c4": 10.925696164369583,
+   "c4nl": 4.210457682609558,
+   "syschat": 2.181995891034603
+  },
+  "/ckpt/gpt-oss-20b-rtn-w2-g32": {
+   "c4": 5.863607883453369,
+   "c4nl": 4.492460519075394,
+   "syschat": 2.2258787602186203
+  },
+  "/ckpt/gpt-oss-20b-gptq-w2-g32": {
+   "c4": 7.901019781827927,
+   "c4nl": 4.468222483992577,
+   "syschat": 2.9790458530187607
+  },
+  "/ckpt/gpt-oss-20b-gptq-w2-g32-cal-syschat": {
+   "c4": 7.29211288690567,
+   "c4nl": 4.538565710186958,
+   "syschat": 2.2165025398135185
+  },
+  "/ckpt/gpt-oss-20b-gptq-w2-g32-cal-chat_nosys": {
+   "c4": 6.7118819653987885,
+   "c4nl": 4.570523530244827,
+   "syschat": 2.2900952473282814
+  },
+  "/ckpt/gpt-oss-20b-blockap-w2-g32-cal-c4": {
+   "c4": 11.15445026755333,
+   "c4nl": 4.651730731129646,
+   "syschat": 2.198988914489746
+  },
+  "/ckpt/gpt-oss-20b-blockap-w2-g32-cal-syschat": {
+   "c4": 7.485123425722122,
+   "c4nl": 4.830505281686783,
+   "syschat": 2.232843428850174
+  },
+  "/ckpt/gpt-oss-20b-eqat-w2-g32-cal-c4": {
+   "c4": 3.0785946249961853,
+   "c4nl": 3.0898707658052444,
+   "syschat": 1.3877904415130615
+  },
+  "/ckpt/gpt-oss-20b-eqat-w2-g32-cal-syschat": {
+   "c4": 4.242743566632271,
+   "c4nl": 3.298993930220604,
+   "syschat": 0.9275079779326916
+  },
+  "/ckpt/gpt-oss-20b-eqat-w2-g32-cal-syschat-asst": {
+   "c4": 4.503053322434425,
+   "c4nl": 3.3642905950546265,
+   "syschat": 1.3298323228955269,
+   "note": "from build_eqat(curves=True) final held-out eval (same eval_ce code path); not IHEval-evaluated"
+  }
+ }
+}

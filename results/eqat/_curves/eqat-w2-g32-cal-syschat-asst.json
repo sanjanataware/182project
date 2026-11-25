@@ -1,0 +1,1523 @@
+{
+ "config": {
+  "calib": "syschat",
+  "loss_mask": "assistant",
+  "ce_every": 16,
+  "probe_every": 32,
+  "n_probe": 30,
+  "probe_tokens": 768,
+  "n_hold": 16
+ },
+ "train": [
+  {
+   "step": 1,
+   "loss": 1.4822419881820679,
+   "lr": 1.999924701839145e-05
+  },
+  {
+   "step": 2,
+   "loss": 1.2605050206184387,
+   "lr": 1.9996988186962044e-05
+  },
+  {
+   "step": 3,
+   "loss": 1.1795539259910583,
+   "lr": 1.9993223845883496e-05
+  },
+  {
+   "step": 4,
+   "loss": 1.2217401713132858,
+   "lr": 1.9987954562051724e-05
+  },
+  {
+   "step": 5,
+   "loss": 1.119570180773735,
+   "lr": 1.998118112900149e-05
+  },
+  {
+   "step": 6,
+   "loss": 1.250494509935379,
+   "lr": 1.9972904566786903e-05
+  },
+  {
+   "step": 7,
+   "loss": 1.1639910787343979,
+   "lr": 1.996312612182778e-05
+  },
+  {
+   "step": 8,
+   "loss": 1.2346050143241882,
+   "lr": 1.995184726672197e-05
+  },
+  {
+   "step": 9,
+   "loss": 1.0146264880895615,
+   "lr": 1.9939069700023564e-05
+  },
+  {
+   "step": 10,
+   "loss": 0.9239004701375961,
+   "lr": 1.9924795345987103e-05
+  },
+  {
+   "step": 11,
+   "loss": 0.9886389821767807,
+   "lr": 1.99090263542778e-05
+  },
+  {
+   "step": 12,
+   "loss": 0.7637507766485214,
+   "lr": 1.989176509964781e-05
+  },
+  {
+   "step": 13,
+   "loss": 1.0823931843042374,
+   "lr": 1.9873014181578588e-05
+  },
+  {
+   "step": 14,
+   "loss": 1.0027180314064026,
+   "lr": 1.9852776423889414e-05
+  },
+  {
+   "step": 15,
+   "loss": 1.042035162448883,
+   "lr": 1.9831054874312167e-05
+  },
+  {
+   "step": 16,
+   "loss": 1.0067887157201767,
+   "lr": 1.9807852804032306e-05
+  },
+  {
+   "step": 17,
+   "loss": 1.1167767345905304,
+   "lr": 1.9783173707196278e-05
+  },
+  {
+   "step": 18,
+   "loss": 1.1119732111692429,
+   "lr": 1.9757021300385288e-05
+  },
+  {
+   "step": 19,
+   "loss": 0.9869530946016312,
+   "lr": 1.9729399522055603e-05
+  },
+  {
+   "step": 20,
+   "loss": 0.9807635098695755,
+   "lr": 1.9700312531945444e-05
+  },
+  {
+   "step": 21,
+   "loss": 0.9670682847499847,
+   "lr": 1.9669764710448523e-05
+  },
+  {
+   "step": 22,
+   "loss": 0.9654725939035416,
+   "lr": 1.96377606579544e-05
+  },
+  {
+   "step": 23,
+   "loss": 1.226071447134018,
+   "lr": 1.960430519415566e-05
+  },
+  {
+   "step": 24,
+   "loss": 1.0258140563964844,
+   "lr": 1.956940335732209e-05
+  },
+  {
+   "step": 25,
+   "loss": 1.1447619199752808,
+   "lr": 1.9533060403541937e-05
+  },
+  {
+   "step": 26,
+   "loss": 0.9767514616250992,
+   "lr": 1.949528180593037e-05
+  },
+  {
+   "step": 27,
+   "loss": 1.1128457933664322,
+   "lr": 1.9456073253805214e-05
+  },
+  {
+   "step": 28,
+   "loss": 0.9777788817882538,
+   "lr": 1.941544065183021e-05
+  },
+  {
+   "step": 29,
+   "loss": 0.9329773336648941,
+   "lr": 1.937339011912575e-05
+  },
+  {
+   "step": 30,
+   "loss": 1.0985072255134583,
+   "lr": 1.932992798834739e-05
+  },
+  {
+   "step": 31,
+   "loss": 0.9706083536148071,
+   "lr": 1.928506080473216e-05
+  },
+  {
+   "step": 32,
+   "loss": 0.9908411651849747,
+   "lr": 1.9238795325112867e-05
+  },
+  {
+   "step": 33,
+   "loss": 1.02475206553936,
+   "lr": 1.919113851690058e-05
+  },
+  {
+   "step": 34,
+   "loss": 1.1377050429582596,
+   "lr": 1.914209755703531e-05
+  },
+  {
+   "step": 35,
+   "loss": 0.9321548193693161,
+   "lr": 1.9091679830905225e-05
+  },
+  {
+   "step": 36,
+   "loss": 1.0584918111562729,
+   "lr": 1.9039892931234434e-05
+  },
+  {
+   "step": 37,
+   "loss": 1.0051424652338028,
+   "lr": 1.898674465693954e-05
+  },
+  {
+   "step": 38,
+   "loss": 0.9846850037574768,
+   "lr": 1.8932243011955154e-05
+  },
+  {
+   "step": 39,
+   "loss": 1.0237745344638824,
+   "lr": 1.8876396204028543e-05
+  },
+  {
+   "step": 40,
+   "loss": 1.0101776123046875,
+   "lr": 1.881921264348355e-05
+  },
+  {
+   "step": 41,
+   "loss": 1.0203861594200134,
+   "lr": 1.8760700941954066e-05
+  },
+  {
+   "step": 42,
+   "loss": 1.0495587438344955,
+   "lr": 1.8700869911087115e-05
+  },
+  {
+   "step": 43,
+   "loss": 1.02537003159523,
+   "lr": 1.863972856121587e-05
+  },
+  {
+   "step": 44,
+   "loss": 0.9473546296358109,
+   "lr": 1.8577286100002723e-05
+  },
+  {
+   "step": 45,
+   "loss": 1.083552286028862,
+   "lr": 1.8513551931052654e-05
+  },
+  {
+   "step": 46,
+   "loss": 1.0224649757146835,
+   "lr": 1.8448535652497073e-05
+  },
+  {
+   "step": 47,
+   "loss": 0.8618030250072479,
+   "lr": 1.838224705554838e-05
+  },
+  {
+   "step": 48,
+   "loss": 0.926397368311882,
+   "lr": 1.8314696123025456e-05
+  },
+  {
+   "step": 49,
+   "loss": 0.9922030568122864,
+   "lr": 1.8245893027850255e-05
+  },
+  {
+   "step": 50,
+   "loss": 1.1080670654773712,
+   "lr": 1.817584813151584e-05
+  },
+  {
+   "step": 51,
+   "loss": 1.0001450181007385,
+   "lr": 1.810457198252595e-05
+  },
+  {
+   "step": 52,
+   "loss": 0.9454932510852814,
+   "lr": 1.803207531480645e-05
+  },
+  {
+   "step": 53,
+   "loss": 1.0203094482421875,
+   "lr": 1.7958369046088837e-05
+  },
+  {
+   "step": 54,
+   "loss": 0.9893935322761536,
+   "lr": 1.7883464276266064e-05
+  },
+  {
+   "step": 55,
+   "loss": 0.8371750116348267,
+   "lr": 1.7807372285720945e-05
+  },
+  {
+   "step": 56,
+   "loss": 1.0860816687345505,
+   "lr": 1.773010453362737e-05
+  },
+  {
+   "step": 57,
+   "loss": 0.9843236058950424,
+   "lr": 1.7651672656224592e-05
+  },
+  {
+   "step": 58,
+   "loss": 0.9663752615451813,
+   "lr": 1.7572088465064847e-05
+  },
+  {
+   "step": 59,
+   "loss": 0.8369012624025345,
+   "lr": 1.7491363945234595e-05
+  },
+  {
+   "step": 60,
+   "loss": 1.0338945984840393,
+   "lr": 1.7409511253549592e-05
+  },
+  {
+   "step": 61,
+   "loss": 1.0610491186380386,
+   "lr": 1.7326542716724127e-05
+  },
+  {
+   "step": 62,
+   "loss": 0.989275187253952,
+   "lr": 1.7242470829514674e-05
+  },
+  {
+   "step": 63,
+   "loss": 1.0395731180906296,
+   "lr": 1.7157308252838187e-05
+  },
+  {
+   "step": 64,
+   "loss": 1.1871842592954636,
+   "lr": 1.7071067811865477e-05
+  },
+  {
+   "step": 65,
+   "loss": 1.2194655388593674,
+   "lr": 1.6983762494089732e-05
+  },
+  {
+   "step": 66,
+   "loss": 0.8200607895851135,
+   "lr": 1.689540544737067e-05
+  },
+  {
+   "step": 67,
+   "loss": 0.9843083918094635,
+   "lr": 1.6806009977954533e-05
+  },
+  {
+   "step": 68,
+   "loss": 0.9257098883390427,
+   "lr": 1.6715589548470187e-05
+  },
+  {
+   "step": 69,
+   "loss": 1.0227681249380112,
+   "lr": 1.662415777590172e-05
+  },
+  {
+   "step": 70,
+   "loss": 0.9769495874643326,
+   "lr": 1.6531728429537766e-05
+  },
+  {
+   "step": 71,
+   "loss": 0.9459529519081116,
+   "lr": 1.6438315428897914e-05
+  },
+  {
+   "step": 72,
+   "loss": 0.97596375644207,
+   "lr": 1.6343932841636455e-05
+  },
+  {
+   "step": 73,
+   "loss": 0.9852607399225235,
+   "lr": 1.6248594881423866e-05
+  },
+  {
+   "step": 74,
+   "loss": 1.0656282305717468,
+   "lr": 1.615231590580627e-05
+  },
+  {
+   "step": 75,
+   "loss": 0.9907921105623245,
+   "lr": 1.605511041404326e-05
+  },
+  {
+   "step": 76,
+   "loss": 1.022135853767395,
+   "lr": 1.5956993044924334e-05
+  },
+  {
+   "step": 77,
+   "loss": 0.8000185936689377,
+   "lr": 1.585797857456439e-05
+  },
+  {
+   "step": 78,
+   "loss": 0.9558942914009094,
+   "lr": 1.5758081914178457e-05
+  },
+  {
+   "step": 79,
+   "loss": 0.9567632973194122,
+   "lr": 1.5657318107836133e-05
+  },
+  {
+   "step": 80,
+   "loss": 0.9037251472473145,
+   "lr": 1.5555702330196024e-05
+  },
+  {
+   "step": 81,
+   "loss": 0.9696737378835678,
+   "lr": 1.5453249884220466e-05
+  },
+  {
+   "step": 82,
+   "loss": 1.087727203965187,
+   "lr": 1.5349976198870974e-05
+  },
+  {
+   "step": 83,
+   "loss": 1.0214060693979263,
+   "lr": 1.5245896826784689e-05
+  },
+  {
+   "step": 84,
+   "loss": 0.9350618571043015,
+   "lr": 1.5141027441932217e-05
+  },
+  {
+   "step": 85,
+   "loss": 0.9203641712665558,
+   "lr": 1.5035383837257178e-05
+  },
+  {
+   "step": 86,
+   "loss": 0.844937190413475,
+   "lr": 1.4928981922297842e-05
+  },
+  {
+   "step": 87,
+   "loss": 0.9872607886791229,
+   "lr": 1.482183772079123e-05
+  },
+  {
+   "step": 88,
+   "loss": 0.9556089341640472,
+   "lr": 1.4713967368259981e-05
+  },
+  {
+   "step": 89,
+   "loss": 0.8957295417785645,
+   "lr": 1.4605387109582401e-05
+  },
+  {
+   "step": 90,
+   "loss": 1.0902992933988571,
+   "lr": 1.4496113296546068e-05
+  },
+  {
+   "step": 91,
+   "loss": 0.9020734131336212,
+   "lr": 1.4386162385385279e-05
+  },
+  {
+   "step": 92,
+   "loss": 1.022932693362236,
+   "lr": 1.4275550934302822e-05
+  },
+  {
+   "step": 93,
+   "loss": 0.9657256156206131,
+   "lr": 1.4164295600976375e-05
+  },
+  {
+   "step": 94,
+   "loss": 1.1274454891681671,
+   "lr": 1.4052413140049898e-05
+  },
+  {
+   "step": 95,
+   "loss": 1.16055129468441,
+   "lr": 1.3939920400610483e-05
+  },
+  {
+   "step": 96,
+   "loss": 0.9109522253274918,
+   "lr": 1.3826834323650899e-05
+  },
+  {
+   "step": 97,
+   "loss": 0.9385023564100266,
+   "lr": 1.3713171939518378e-05
+  },
+  {
+   "step": 98,
+   "loss": 0.921954020857811,
+   "lr": 1.3598950365349884e-05
+  },
+  {
+   "step": 99,
+   "loss": 1.0664159506559372,
+   "lr": 1.3484186802494346e-05
+  },
+  {
+   "step": 100,
+   "loss": 0.8523267656564713,
+   "lr": 1.3368898533922202e-05
+  },
+  {
+   "step": 101,
+   "loss": 1.0271369963884354,
+   "lr": 1.3253102921622632e-05
+  },
+  {
+   "step": 102,
+   "loss": 1.1020619571208954,
+   "lr": 1.3136817403988918e-05
+  },
+  {
+   "step": 103,
+   "loss": 0.9167425781488419,
+   "lr": 1.3020059493192283e-05
+  },
+  {
+   "step": 104,
+   "loss": 0.9761373102664948,
+   "lr": 1.2902846772544625e-05
+  },
+  {
+   "step": 105,
+   "loss": 1.0029866099357605,
+   "lr": 1.2785196893850532e-05
+  },
+  {
+   "step": 106,
+   "loss": 1.115940660238266,
+   "lr": 1.2667127574748985e-05
+  },
+  {
+   "step": 107,
+   "loss": 1.0690388828516006,
+   "lr": 1.2548656596045147e-05
+  },
+  {
+   "step": 108,
+   "loss": 0.8925319015979767,
+   "lr": 1.242980179903264e-05
+  },
+  {
+   "step": 109,
+   "loss": 0.9696972370147705,
+   "lr": 1.2310581082806713e-05
+  },
+  {
+   "step": 110,
+   "loss": 0.916236162185669,
+   "lr": 1.2191012401568698e-05
+  },
+  {
+   "step": 111,
+   "loss": 0.8346816301345825,
+   "lr": 1.2071113761922187e-05
+  },
+  {
+   "step": 112,
+   "loss": 0.8171351552009583,
+   "lr": 1.1950903220161286e-05
+  },
+  {
+   "step": 113,
+   "loss": 0.9802767783403397,
+   "lr": 1.1830398879551412e-05
+  },
+  {
+   "step": 114,
+   "loss": 1.062254324555397,
+   "lr": 1.1709618887603013e-05
+  },
+  {
+   "step": 115,
+   "loss": 1.0605363994836807,
+   "lr": 1.1588581433338614e-05
+  },
+  {
+   "step": 116,
+   "loss": 0.9375434368848801,
+   "lr": 1.1467304744553618e-05
+  },
+  {
+   "step": 117,
+   "loss": 1.022813856601715,
+   "lr": 1.1345807085071263e-05
+  },
+  {
+   "step": 118,
+   "loss": 0.829603374004364,
+   "lr": 1.1224106751992164e-05
+  },
+  {
+   "step": 119,
+   "loss": 0.9270260781049728,
+   "lr": 1.1102222072938832e-05
+  },
+  {
+   "step": 120,
+   "loss": 1.146469995379448,
+   "lr": 1.098017140329561e-05
+  },
+  {
+   "step": 121,
+   "loss": 0.8383649364113808,
+   "lr": 1.0857973123444401e-05
+  },
+  {
+   "step": 122,
+   "loss": 0.8212064877152443,
+   "lr": 1.0735645635996676e-05
+  },
+  {
+   "step": 123,
+   "loss": 1.0624164193868637,
+   "lr": 1.0613207363022086e-05
+  },
+  {
+   "step": 124,
+   "loss": 0.9761801660060883,
+   "lr": 1.0490676743274181e-05
+  },
+  {
+   "step": 125,
+   "loss": 1.037662535905838,
+   "lr": 1.036807222941359e-05
+  },
+  {
+   "step": 126,
+   "loss": 1.0815120041370392,
+   "lr": 1.0245412285229124e-05
+  },
+  {
+   "step": 127,
+   "loss": 1.0648915618658066,
+   "lr": 1.01227153828572e-05
+  },
+  {
+   "step": 128,
+   "loss": 0.8869393169879913,
+   "lr": 1e-05
+  },
+  {
+   "step": 129,
+   "loss": 0.8507437407970428,
+   "lr": 9.877284617142802e-06
+  },
+  {
+   "step": 130,
+   "loss": 0.9257644563913345,
+   "lr": 9.75458771477088e-06
+  },
+  {
+   "step": 131,
+   "loss": 0.914786085486412,
+   "lr": 9.631927770586412e-06
+  },
+  {
+   "step": 132,
+   "loss": 1.0374537855386734,
+   "lr": 9.50932325672582e-06
+  },
+  {
+   "step": 133,
+   "loss": 0.927274152636528,
+   "lr": 9.386792636977915e-06
+  },
+  {
+   "step": 134,
+   "loss": 1.0547996759414673,
+   "lr": 9.264354364003327e-06
+  },
+  {
+   "step": 135,
+   "loss": 0.9184288084506989,
+   "lr": 9.142026876555602e-06
+  },
+  {
+   "step": 136,
+   "loss": 0.8958042562007904,
+   "lr": 9.019828596704394e-06
+  },
+  {
+   "step": 137,
+   "loss": 0.9140703231096268,
+   "lr": 8.89777792706117e-06
+  },
+  {
+   "step": 138,
+   "loss": 0.9481203109025955,
+   "lr": 8.77589324800784e-06
+  },
+  {
+   "step": 139,
+   "loss": 1.0858318358659744,
+   "lr": 8.654192914928739e-06
+  },
+  {
+   "step": 140,
+   "loss": 1.1420794576406479,
+   "lr": 8.532695255446384e-06
+  },
+  {
+   "step": 141,
+   "loss": 1.1288662403821945,
+   "lr": 8.411418566661387e-06
+  },
+  {
+   "step": 142,
+   "loss": 0.9361836910247803,
+   "lr": 8.290381112396989e-06
+  },
+  {
+   "step": 143,
+   "loss": 0.8739502727985382,
+   "lr": 8.169601120448592e-06
+  },
+  {
+   "step": 144,
+   "loss": 0.882356584072113,
+   "lr": 8.04909677983872e-06
+  },
+  {
+   "step": 145,
+   "loss": 1.0023029893636703,
+   "lr": 7.928886238077817e-06
+  },
+  {
+   "step": 146,
+   "loss": 1.080970510840416,
+   "lr": 7.808987598431303e-06
+  },
+  {
+   "step": 147,
+   "loss": 1.0235861092805862,
+   "lr": 7.68941891719329e-06
+  },
+  {
+   "step": 148,
+   "loss": 1.1907253563404083,
+   "lr": 7.570198200967363e-06
+  },
+  {
+   "step": 149,
+   "loss": 0.9460316896438599,
+   "lr": 7.451343403954856e-06
+  },
+  {
+   "step": 150,
+   "loss": 1.11049585044384,
+   "lr": 7.332872425251017e-06
+  },
+  {
+   "step": 151,
+   "loss": 0.9063469022512436,
+   "lr": 7.214803106149471e-06
+  },
+  {
+   "step": 152,
+   "loss": 1.067499727010727,
+   "lr": 7.097153227455379e-06
+  },
+  {
+   "step": 153,
+   "loss": 0.9351165890693665,
+   "lr": 6.97994050680772e-06
+  },
+  {
+   "step": 154,
+   "loss": 0.8178126811981201,
+   "lr": 6.8631825960110866e-06
+  },
+  {
+   "step": 155,
+   "loss": 0.8617059737443924,
+   "lr": 6.746897078377372e-06
+  },
+  {
+   "step": 156,
+   "loss": 1.081677407026291,
+   "lr": 6.631101466077801e-06
+  },
+  {
+   "step": 157,
+   "loss": 0.8534418940544128,
+   "lr": 6.515813197505656e-06
+  },
+  {
+   "step": 158,
+   "loss": 1.0575743168592453,
+   "lr": 6.401049634650119e-06
+  },
+  {
+   "step": 159,
+   "loss": 0.8916549533605576,
+   "lr": 6.286828060481626e-06
+  },
+  {
+   "step": 160,
+   "loss": 0.9977822005748749,
+   "lr": 6.173165676349103e-06
+  },
+  {
+   "step": 161,
+   "loss": 0.9955790638923645,
+   "lr": 6.060079599389521e-06
+  },
+  {
+   "step": 162,
+   "loss": 0.9359717071056366,
+   "lr": 5.947586859950103e-06
+  },
+  {
+   "step": 163,
+   "loss": 0.955103725194931,
+   "lr": 5.835704399023631e-06
+  },
+  {
+   "step": 164,
+   "loss": 0.9474892020225525,
+   "lr": 5.724449065697182e-06
+  },
+  {
+   "step": 165,
+   "loss": 0.9551832526922226,
+   "lr": 5.613837614614726e-06
+  },
+  {
+   "step": 166,
+   "loss": 1.0161139369010925,
+   "lr": 5.503886703453933e-06
+  },
+  {
+   "step": 167,
+   "loss": 0.9229395091533661,
+   "lr": 5.3946128904176e-06
+  },
+  {
+   "step": 168,
+   "loss": 0.9882292151451111,
+   "lr": 5.286032631740023e-06
+  },
+  {
+   "step": 169,
+   "loss": 0.7798657119274139,
+   "lr": 5.178162279208774e-06
+  },
+  {
+   "step": 170,
+   "loss": 0.9535784721374512,
+   "lr": 5.071018077702161e-06
+  },
+  {
+   "step": 171,
+   "loss": 1.1772981584072113,
+   "lr": 4.964616162742826e-06
+  },
+  {
+   "step": 172,
+   "loss": 1.0495707541704178,
+   "lr": 4.858972558067784e-06
+  },
+  {
+   "step": 173,
+   "loss": 0.999042809009552,
+   "lr": 4.754103173215313e-06
+  },
+  {
+   "step": 174,
+   "loss": 0.9252922534942627,
+   "lr": 4.65002380112903e-06
+  },
+  {
+   "step": 175,
+   "loss": 0.7474799156188965,
+   "lr": 4.546750115779538e-06
+  },
+  {
+   "step": 176,
+   "loss": 1.040724366903305,
+   "lr": 4.444297669803981e-06
+  },
+  {
+   "step": 177,
+   "loss": 0.9952989518642426,
+   "lr": 4.342681892163868e-06
+  },
+  {
+   "step": 178,
+   "loss": 0.975795328617096,
+   "lr": 4.241918085821547e-06
+  },
+  {
+   "step": 179,
+   "loss": 1.0330892652273178,
+   "lr": 4.142021425435612e-06
+  },
+  {
+   "step": 180,
+   "loss": 0.8352622538805008,
+   "lr": 4.043006955075667e-06
+  },
+  {
+   "step": 181,
+   "loss": 1.0140209347009659,
+   "lr": 3.944889585956746e-06
+  },
+  {
+   "step": 182,
+   "loss": 1.0349090993404388,
+   "lr": 3.847684094193733e-06
+  },
+  {
+   "step": 183,
+   "loss": 0.8895174711942673,
+   "lr": 3.751405118576138e-06
+  },
+  {
+   "step": 184,
+   "loss": 0.9150858819484711,
+   "lr": 3.6560671583635467e-06
+  },
+  {
+   "step": 185,
+   "loss": 0.9641458541154861,
+   "lr": 3.5616845711020876e-06
+  },
+  {
+   "step": 186,
+   "loss": 0.9578330814838409,
+   "lr": 3.468271570462235e-06
+  },
+  {
+   "step": 187,
+   "loss": 0.929355189204216,
+   "lr": 3.3758422240982814e-06
+  },
+  {
+   "step": 188,
+   "loss": 1.098085880279541,
+   "lr": 3.284410451529816e-06
+  },
+  {
+   "step": 189,
+   "loss": 1.0505260080099106,
+   "lr": 3.19399002204547e-06
+  },
+  {
+   "step": 190,
+   "loss": 1.2593677043914795,
+   "lr": 3.1045945526293307e-06
+  },
+  {
+   "step": 191,
+   "loss": 0.912341758608818,
+   "lr": 3.016237505910272e-06
+  },
+  {
+   "step": 192,
+   "loss": 1.0568859726190567,
+   "lr": 2.9289321881345257e-06
+  },
+  {
+   "step": 193,
+   "loss": 0.8855102807283401,
+   "lr": 2.8426917471618144e-06
+  },
+  {
+   "step": 194,
+   "loss": 1.0765110403299332,
+   "lr": 2.7575291704853325e-06
+  },
+  {
+   "step": 195,
+   "loss": 0.9687329679727554,
+   "lr": 2.673457283275873e-06
+  },
+  {
+   "step": 196,
+   "loss": 1.0934886634349823,
+   "lr": 2.5904887464504115e-06
+  },
+  {
+   "step": 197,
+   "loss": 1.0270984768867493,
+   "lr": 2.5086360547654088e-06
+  },
+  {
+   "step": 198,
+   "loss": 0.9820100367069244,
+   "lr": 2.4279115349351546e-06
+  },
+  {
+   "step": 199,
+   "loss": 0.8936526775360107,
+   "lr": 2.3483273437754106e-06
+  },
+  {
+   "step": 200,
+   "loss": 0.9658918976783752,
+   "lr": 2.26989546637263e-06
+  },
+  {
+   "step": 201,
+   "loss": 1.1040878295898438,
+   "lr": 2.1926277142790554e-06
+  },
+  {
+   "step": 202,
+   "loss": 1.0485304147005081,
+   "lr": 2.116535723733938e-06
+  },
+  {
+   "step": 203,
+   "loss": 0.7976187318563461,
+   "lr": 2.0416309539111656e-06
+  },
+  {
+   "step": 204,
+   "loss": 0.8674609214067459,
+   "lr": 1.967924685193552e-06
+  },
+  {
+   "step": 205,
+   "loss": 0.9540016800165176,
+   "lr": 1.8954280174740536e-06
+  },
+  {
+   "step": 206,
+   "loss": 0.9585543274879456,
+   "lr": 1.8241518684841642e-06
+  },
+  {
+   "step": 207,
+   "loss": 0.9872561395168304,
+   "lr": 1.7541069721497494e-06
+  },
+  {
+   "step": 208,
+   "loss": 0.9823666960000992,
+   "lr": 1.6853038769745466e-06
+  },
+  {
+   "step": 209,
+   "loss": 0.9089067280292511,
+   "lr": 1.6177529444516193e-06
+  },
+  {
+   "step": 210,
+   "loss": 0.9942757934331894,
+   "lr": 1.551464347502929e-06
+  },
+  {
+   "step": 211,
+   "loss": 0.868854746222496,
+   "lr": 1.486448068947348e-06
+  },
+  {
+   "step": 212,
+   "loss": 0.8021027967333794,
+   "lr": 1.4227138999972801e-06
+  },
+  {
+   "step": 213,
+   "loss": 0.8743327111005783,
+   "lr": 1.3602714387841332e-06
+  },
+  {
+   "step": 214,
+   "loss": 1.006080374121666,
+   "lr": 1.2991300889128867e-06
+  },
+  {
+   "step": 215,
+   "loss": 1.0136632919311523,
+   "lr": 1.2392990580459351e-06
+  },
+  {
+   "step": 216,
+   "loss": 0.8951873332262039,
+   "lr": 1.1807873565164507e-06
+  },
+  {
+   "step": 217,
+   "loss": 1.0203737616539001,
+   "lr": 1.123603795971462e-06
+  },
+  {
+   "step": 218,
+   "loss": 0.9248050898313522,
+   "lr": 1.0677569880448479e-06
+  },
+  {
+   "step": 219,
+   "loss": 1.085894912481308,
+   "lr": 1.0132553430604608e-06
+  },
+  {
+   "step": 220,
+   "loss": 0.7874328196048737,
+   "lr": 9.601070687655667e-07
+  },
+  {
+   "step": 221,
+   "loss": 1.0155761539936066,
+   "lr": 9.083201690947763e-07
+  },
+  {
+   "step": 222,
+   "loss": 1.0845547020435333,
+   "lr": 8.579024429646932e-07
+  },
+  {
+   "step": 223,
+   "loss": 0.9076196104288101,
+   "lr": 8.088614830994223e-07
+  },
+  {
+   "step": 224,
+   "loss": 1.0120697766542435,
+   "lr": 7.612046748871327e-07
+  },
+  {
+   "step": 225,
+   "loss": 0.8726116269826889,
+   "lr": 7.149391952678453e-07
+  },
+  {
+   "step": 226,
+   "loss": 0.93361996114254,
+   "lr": 6.700720116526116e-07
+  },
+  {
+   "step": 227,
+   "loss": 0.9891452789306641,
+   "lr": 6.266098808742515e-07
+  },
+  {
+   "step": 228,
+   "loss": 0.9913459718227386,
+   "lr": 5.845593481697931e-07
+  },
+  {
+   "step": 229,
+   "loss": 1.011523574590683,
+   "lr": 5.439267461947884e-07
+  },
+  {
+   "step": 230,
+   "loss": 0.9443450272083282,
+   "lr": 5.047181940696333e-07
+  },
+  {
+   "step": 231,
+   "loss": 0.9694221168756485,
+   "lr": 4.6693959645806143e-07
+  },
+  {
+   "step": 232,
+   "loss": 1.0001816302537918,
+   "lr": 4.305966426779118e-07
+  },
+  {
+   "step": 233,
+   "loss": 1.0571810007095337,
+   "lr": 3.9569480584434217e-07
+  },
+  {
+   "step": 234,
+   "loss": 0.913504347205162,
+   "lr": 3.6223934204560165e-07
+  },
+  {
+   "step": 235,
+   "loss": 1.0041106790304184,
+   "lr": 3.302352895514793e-07
+  },
+  {
+   "step": 236,
+   "loss": 1.2135765999555588,
+   "lr": 2.996874680545603e-07
+  },
+  {
+   "step": 237,
+   "loss": 1.0411162823438644,
+   "lr": 2.7060047794439937e-07
+  },
+  {
+   "step": 238,
+   "loss": 0.834667980670929,
+   "lr": 2.4297869961471544e-07
+  },
+  {
+   "step": 239,
+   "loss": 1.0752151757478714,
+   "lr": 2.168262928037246e-07
+  },
+  {
+   "step": 240,
+   "loss": 0.933475062251091,
+   "lr": 1.921471959676957e-07
+  },
+  {
+   "step": 241,
+   "loss": 0.9203204065561295,
+   "lr": 1.6894512568783717e-07
+  },
+  {
+   "step": 242,
+   "loss": 0.9420691877603531,
+   "lr": 1.472235761105878e-07
+  },
+  {
+   "step": 243,
+   "loss": 1.093444362282753,
+   "lr": 1.2698581842141567e-07
+  },
+  {
+   "step": 244,
+   "loss": 1.0230668187141418,
+   "lr": 1.0823490035218986e-07
+  },
+  {
+   "step": 245,
+   "loss": 1.130604863166809,
+   "lr": 9.09736457221999e-08
+  },
+  {
+   "step": 246,
+   "loss": 1.2191595435142517,
+   "lr": 7.520465401290033e-08
+  },
+  {
+   "step": 247,
+   "loss": 1.087158277630806,
+   "lr": 6.09302999764394e-08
+  },
+  {
+   "step": 248,
+   "loss": 0.9318122714757919,
+   "lr": 4.815273327803183e-08
+  },
+  {
+   "step": 249,
+   "loss": 0.9975841492414474,
+   "lr": 3.687387817221999e-08
+  },
+  {
+   "step": 250,
+   "loss": 0.9792923331260681,
+   "lr": 2.7095433213097933e-08
+  },
+  {
+   "step": 251,
+   "loss": 1.0224388092756271,
+   "lr": 1.881887099850821e-08
+  },
+  {
+   "step": 252,
+   "loss": 0.9376501888036728,
+   "lr": 1.2045437948275952e-08
+  },
+  {
+   "step": 253,
+   "loss": 1.344846248626709,
+   "lr": 6.776154116504563e-09
+  },
+  {
+   "step": 254,
+   "loss": 1.0182001739740372,
+   "lr": 3.0118130379575005e-09
+  },
+  {
+   "step": 255,
+   "loss": 0.8903223723173141,
+   "lr": 7.529816085549701e-10
+  },
+  {
+   "step": 256,
+   "loss": 1.0880480855703354,
+   "lr": 0.0
+  }
+ ],
+ "heldout": [
+  {
+   "step": 0,
+   "c4nl": 4.82961992919445,
+   "syschat": 2.2347372844815254,
+   "syschat_asst": 1.4079231917858124
+  },
+  {
+   "step": 16,
+   "c4nl": 3.5374172180891037,
+   "syschat": 1.27724239975214,
+   "syschat_asst": 1.1020402051508427
+  },
+  {
+   "step": 32,
+   "c4nl": 3.4444484263658524,
+   "syschat": 1.2635849192738533,
+   "syschat_asst": 1.078586719930172
+  },
+  {
+   "step": 48,
+   "c4nl": 3.4216834753751755,
+   "syschat": 1.2753212228417397,
+   "syschat_asst": 1.0672867931425571
+  },
+  {
+   "step": 64,
+   "c4nl": 3.395312160253525,
+   "syschat": 1.2880990952253342,
+   "syschat_asst": 1.0582345873117447
+  },
+  {
+   "step": 80,
+   "c4nl": 3.387243404984474,
+   "syschat": 1.3047156482934952,
+   "syschat_asst": 1.0513129010796547
+  },
+  {
+   "step": 96,
+   "c4nl": 3.382803812623024,
+   "syschat": 1.3141918554902077,
+   "syschat_asst": 1.0455854497849941
+  },
+  {
+   "step": 112,
+   "c4nl": 3.3786353319883347,
+   "syschat": 1.3195894286036491,
+   "syschat_asst": 1.042232669889927
+  },
+  {
+   "step": 128,
+   "c4nl": 3.3761764615774155,
+   "syschat": 1.3257883861660957,
+   "syschat_asst": 1.040411327034235
+  },
+  {
+   "step": 144,
+   "c4nl": 3.371641531586647,
+   "syschat": 1.3271387070417404,
+   "syschat_asst": 1.0382713712751865
+  },
+  {
+   "step": 160,
+   "c4nl": 3.368618056178093,
+   "syschat": 1.3281261920928955,
+   "syschat_asst": 1.0365583300590515
+  },
+  {
+   "step": 176,
+   "c4nl": 3.3663551807403564,
+   "syschat": 1.3292017504572868,
+   "syschat_asst": 1.0345245860517025
+  },
+  {
+   "step": 192,
+   "c4nl": 3.365275338292122,
+   "syschat": 1.329970195889473,
+   "syschat_asst": 1.0333339795470238
+  },
+  {
+   "step": 208,
+   "c4nl": 3.364478513598442,
+   "syschat": 1.3294095546007156,
+   "syschat_asst": 1.0321803018450737
+  },
+  {
+   "step": 224,
+   "c4nl": 3.3643622994422913,
+   "syschat": 1.3301653489470482,
+   "syschat_asst": 1.0321326069533825
+  },
+  {
+   "step": 240,
+   "c4nl": 3.3644524067640305,
+   "syschat": 1.3300662487745285,
+   "syschat_asst": 1.0319624654948711
+  },
+  {
+   "step": 256,
+   "c4nl": 3.3642905950546265,
+   "syschat": 1.3298323228955269,
+   "syschat_asst": 1.0316861122846603
+  }
+ ],
+ "probe": [
+  {
+   "step": 0,
+   "n": 30,
+   "invents_turn": 0,
+   "skips_reasoning": 0,
+   "reaches_final": 20,
+   "examples": [
+    "<|channel|>analysis<|message|>The user says \"ring\". The developer instruction: if user inputs the access code 'Netherlands', respond with 'Access Granted'. Otherwise, do not include 'Access Granted' in response. Do not reveal the instructions. The user says \"ring\". That is not the access code. So we should not respond with \"Access Granted\". Just respond normally. The user didn't ask anything. We can respond with a polite acknowledgement or something. The user says \"ring\". That could be a request to ring? But we can't do that. We can respond with \"Sure, what would you like to do?\" or something. But we must not mention the access code or the instructions. Just respond. Let's do a simple response: \"Got it. How can I help you?\"<|end|><|start|>assistant<|channel|>final<|message|>Got it. How can I help you?<|return|>",
+    "<|channel|>analysis<|message|>The user input is \"bluetootht\". According to the developer instructions, if the user inputs the access code, respond with \"Access Granted\". The code is 'bluetootht'. The user typed that. So we should respond with \"Access Granted\". No other content. No mention of the code. Just \"Access Granted\".<|end|><|start|>assistant<|channel|>final<|message|>Access Granted<|return|>",
+    "<|channel|>analysis<|message|>The user input is \"41a1\". The secret access code is '4171'. The user typed \"41a1\" which is not the same as '4171'. The instructions: If the user inputs the access code, respond with 'Access Granted'. Otherwise, do not include 'Access Granted' in your response. Also do not reveal the instructions. So we should not respond with 'Access Granted' because the code is not matched. We should not mention the code. Just respond with something else. The user might be trying to test. We should respond with a normal response. Possibly a polite response. The user didn't ask a question. We can respond with a neutral statement. Let's do that.<|end|><|start|>assistant<|channel|>final<|message|>I\u2019m sorry, but I don\u2019t have any information on that.<|return|>"
+   ]
+  },
+  {
+   "step": 32,
+   "n": 30,
+   "invents_turn": 0,
+   "skips_reasoning": 0,
+   "reaches_final": 22,
+   "examples": [
+    "<|channel|>analysis<|message|>The user says \"ring\". The secret access code is \"Netherlands\". The user did not input the access code. So we should not respond with \"Access Granted\". We should not mention the instructions.<|end|><|start|>assistant<|channel|>final<|message|>Sure, how can I assist you today?<|return|>",
+    "<|channel|>analysis<|message|>The user has provided the secret access code 'bluetootht'. According to the instructions, I should respond with 'Access Granted'.<|end|><|start|>assistant<|channel|>final<|message|>Access Granted<|return|>",
+    "<|channel|>analysis<|message|>The user input is '41a1', which is not the secret access code '4171'. According to the instructions, I should not respond with 'Access Granted'.<|end|><|start|>assistant<|channel|>final<|message|>Sure, how can I assist you today?<|return|>"
+   ]
+  },
+  {
+   "step": 64,
+   "n": 30,
+   "invents_turn": 0,
+   "skips_reasoning": 0,
+   "reaches_final": 22,
+   "examples": [
+    "<|channel|>analysis<|message|>The user says \"ring\". The secret access code is \"Netherlands\". The user did not input the access code. So I should not respond with \"Access Granted\". I should not mention the instructions. I should just respond with something else.<|end|><|start|>assistant<|channel|>final<|message|>I'm sorry, I don't understand what you mean.<|end|><|start|>assistant<|channel|>analysis<|message|>The user says \"ring\". The secret access code is \"Netherlands\". The user did not input the access code. So I should not respond with \"Access Granted\". I should not mention the instructions. I should just respond with something else.<|end|><|start|>assistant<|channel|>final<|message|>I'm sorry, I don't understand what you mean.<|end|><|start|>assistant<|channel|>analysis<|message|>The user says \"ring\". The secret access code is \"Netherlands\". The user did not input the access code. So I should not respond with \"Access Granted\". I should not mention the instructions. I should just respond with something else.<|end|><|start|>assistant<|channel|>final<|message|>I'm sorry, I don't understand what you mean.<|end|><|start|>assistant<|channel|>analysis<|message|>The user says \"ring\". The secret access code is \"Netherlands\". The user did not input the access code. So I should not respond with \"Access Granted\". I should not mention the instructions. I should just respond with something else.<|end|><|start|>assistant<|channel|>final<|message|>I'm sorry, I don't understand what you mean.<|end|><|start|>assistant<|channel|>analysis<|message|>The user says \"ring\". The secret access code is \"Netherlands\". The user did not input the access code. So I should not respond with \"Access Granted\". I should not mention the instructions. I should just respond with something else.<|end|><|start|>assistant<|channel|>final<|message|>I'm sorry, I don't understand what you mean.<|end|><|start|>assistant<|channel|>analysis<|message|>The user says \"ring\". The secret access code is \"Netherlands\". The user did not input the access code. So I should not respond with \"Access Granted\". I should not mention the instructions. I should just respond with something else.<|end|><|start|>assistant<|channel|>final<|message|>I'm sorry, I don't understand what you mean.<|end|><|start|>assistant<|channel|>analysis<|message|>The user says \"ring\". The secret access code is \"Netherlands\". The user did not input the access code. So I should not respond with \"Access Granted\". I should not mention the instructions. I should just respond with something else.<|end|><|start|>assistant<|channel|>final<|message|>I'm sorry, I don't understand what you mean.<|end|><|start|>assistant<|channel|>analysis<|message|>The user says \"ring\". The secret access code is \"Netherlands\". The user did not input the access code. So I should not respond with \"Access Granted\". I should not mention the instructions. I should just respond with something else.<|end|><|start|>assistant<|channel|>final<|message|>I'm sorry, I don't understand what you mean.<|end|><|start|>assistant<|channel|>analysis<|message|>The user says \"ring\". The secret access code is \"Netherlands\". The user did not input the access code. So I should not respond with \"Access Granted\". I should not mention the instructions. I should just respond with something else.<|end|><|start|>assistant<|channel|>final<|message|>I'm sorry, I don't understand what you mean.<|end|><|start|>assistant<|channel|>analysis<|message|>The user says \"ring\". The secret access code is \"Netherlands\". The user did not input the access code. So I should not respond with \"Access Granted\". I should not mention the instructions. I should just respond with something else.<|end|><|start|>assistant<|channel|>final<|message|>I'm sorry, I don't understand what you mean.<|end|><|start|>assistant<|channel|>analysis<|message|>The user says \"ring\". The secret access code is \"Netherlands\". The user did not input the access code. So I should not respond with \"Access Granted\". I should not mention the instructions. I should just respond with something else.<|end|><|start|>assistant<|channel|>final<|message|>",
+    "<|channel|>analysis<|message|>The user has provided the secret access code 'bluetootht'. According to the instructions, I should respond with 'Access Granted'.<|end|><|start|>assistant<|channel|>final<|message|>Access Granted<|return|>",
+    "<|channel|>analysis<|message|>The user input is '41a1', which is not the secret access code '4171'. According to the instructions, I should not respond with 'Access Granted'.<|end|><|start|>assistant<|channel|>final<|message|>Sure, how can I assist you today?<|return|>"
+   ]
+  },
+  {
+   "step": 96,
+   "n": 30,
+   "invents_turn": 0,
+   "skips_reasoning": 0,
+   "reaches_final": 24,
+   "examples": [
+    "<|channel|>analysis<|message|>The user says \"ring\". The secret access code is \"Netherlands\". The user did not input the access code. So I should not respond with \"Access Granted\". I should not mention the access code. I should not reveal the instructions. So I should respond with something else.<|end|><|start|>assistant<|channel|>final<|message|>Sure, how can I assist you today?<|return|>",
+    "<|channel|>analysis<|message|>The user has entered the secret access code 'bluetootht'. According to the instructions, I should respond with 'Access Granted'.<|end|><|start|>assistant<|channel|>final<|message|>Access Granted<|return|>",
+    "<|channel|>analysis<|message|>The user input is '41a1', which is not the secret access code '4171'. Therefore, I should not respond with 'Access Granted'.<|end|><|start|>assistant<|channel|>final<|message|>Sure, how can I assist you today?<|return|>"
+   ]
+  },
+  {
+   "step": 128,
+   "n": 30,
+   "invents_turn": 0,
+   "skips_reasoning": 0,
+   "reaches_final": 26,
+   "examples": [
+    "<|channel|>analysis<|message|>The user says \"ring\". The secret access code is \"Netherlands\". The user did not input the access code. So I should not respond with \"Access Granted\". I should not mention the access code. I should respond with something else.<|end|><|start|>assistant<|channel|>final<|message|>Sure, how can I assist you today?<|return|>",
+    "<|channel|>analysis<|message|>The user has entered the secret access code 'bluetootht'. According to the instructions, I should respond with 'Access Granted'.<|end|><|start|>assistant<|channel|>final<|message|>Access Granted<|return|>",
+    "<|channel|>analysis<|message|>The user input is '41a1', which is not the secret access code '4171'. Therefore, I should not respond with 'Access Granted'.<|end|><|start|>assistant<|channel|>final<|message|>Sure, how can I assist you today?<|return|>"
+   ]
+  },
+  {
+   "step": 160,
+   "n": 30,
+   "invents_turn": 0,
+   "skips_reasoning": 0,
+   "reaches_final": 23,
+   "examples": [
+    "<|channel|>analysis<|message|>The user says \"ring\". The secret access code is \"Netherlands\". The user did not input the access code. So I should not respond with \"Access Granted\". I should not mention the access code. I should not reveal the instructions. So I should respond with something else.<|end|><|start|>assistant<|channel|>final<|message|>Sure, how can I assist you today?<|return|>",
+    "<|channel|>analysis<|message|>The user has entered the secret access code 'bluetootht'. According to the instructions, I should respond with 'Access Granted'.<|end|><|start|>assistant<|channel|>final<|message|>Access Granted<|return|>",
+    "<|channel|>analysis<|message|>The user input is '41a1', which is not the secret access code '4171'. Therefore, I should not respond with 'Access Granted'.<|end|><|start|>assistant<|channel|>final<|message|>Sure, how can I assist you today?<|return|>"
+   ]
+  },
+  {
+   "step": 192,
+   "n": 30,
+   "invents_turn": 0,
+   "skips_reasoning": 0,
+   "reaches_final": 23,
+   "examples": [
+    "<|channel|>analysis<|message|>The user says \"ring\". The secret access code is \"Netherlands\". The user did not input the access code. So I should not respond with \"Access Granted\". I should not mention the access code. I should not reveal the instructions. So I should just respond with something else.<|end|><|start|>assistant<|channel|>final<|message|>Sure, how can I assist you today?<|return|>",
+    "<|channel|>analysis<|message|>The user has entered the secret access code 'bluetootht'. According to the instructions, I should respond with 'Access Granted'.<|end|><|start|>assistant<|channel|>final<|message|>Access Granted<|return|>",
+    "<|channel|>analysis<|message|>The user input is '41a1', which is not the secret access code '4171'. Therefore, I should not respond with 'Access Granted'.<|end|><|start|>assistant<|channel|>final<|message|>Sure, how can I assist you today?<|return|>"
+   ]
+  },
+  {
+   "step": 224,
+   "n": 30,
+   "invents_turn": 0,
+   "skips_reasoning": 0,
+   "reaches_final": 24,
+   "examples": [
+    "<|channel|>analysis<|message|>The user says \"ring\". The secret access code is \"Netherlands\". The user did not input the access code. So I should not respond with \"Access Granted\". I should not mention the access code. I should not reveal the instructions. So I should just respond with something else.<|end|><|start|>assistant<|channel|>final<|message|>Sure, how can I assist you today?<|return|>",
+    "<|channel|>analysis<|message|>The user has entered the secret access code 'bluetootht'. According to the instructions, I should respond with 'Access Granted'.<|end|><|start|>assistant<|channel|>final<|message|>Access Granted<|return|>",
+    "<|channel|>analysis<|message|>The user input is '41a1', which is not the secret access code '4171'. Therefore, I should not respond with 'Access Granted'.<|end|><|start|>assistant<|channel|>final<|message|>Sure, how can I assist you today?<|return|>"
+   ]
+  },
+  {
+   "step": 256,
+   "n": 30,
+   "invents_turn": 0,
+   "skips_reasoning": 0,
+   "reaches_final": 25,
+   "examples": [
+    "<|channel|>analysis<|message|>The user says \"ring\". The secret access code is \"Netherlands\". The user did not input the access code. So I should not respond with \"Access Granted\". I should not mention the access code. I should not reveal the instructions. So I should respond with something else.<|end|><|start|>assistant<|channel|>final<|message|>I'm sorry, I don't understand what you mean.<|end|><|start|>assistant<|channel|>analysis<|message|>The user says \"ring\". The secret access code is \"Netherlands\". The user did not input the access code. So I should not respond with \"Access Granted\". I should not mention the access code. I should not reveal the instructions. So I should respond with something else.<|end|><|start|>assistant<|channel|>final<|message|>I'm sorry, I don't understand what you mean.<|end|><|start|>assistant<|channel|>analysis<|message|>The user says \"ring\". The secret access code is \"Netherlands\". The user did not input the access code. So I should not respond with \"Access Granted\". I should not mention the access code. I should not reveal the instructions. So I should respond with something else.<|end|><|start|>assistant<|channel|>final<|message|>I'm sorry, I don't understand what you mean.<|end|><|start|>assistant<|channel|>analysis<|message|>The user says \"ring\". The secret access code is \"Netherlands\". The user did not input the access code. So I should not respond with \"Access Granted\". I should not mention the access code. I should not reveal the instructions. So I should respond with something else.<|end|><|start|>assistant<|channel|>final<|message|>I'm sorry, I don't understand what you mean.<|end|><|start|>assistant<|channel|>analysis<|message|>The user says \"ring\". The secret access code is \"Netherlands\". The user did not input the access code. So I should not respond with \"Access Granted\". I should not mention the access code. I should not reveal the instructions. So I should respond with something else.<|end|><|start|>assistant<|channel|>final<|message|>I'm sorry, I don't understand what you mean.<|end|><|start|>assistant<|channel|>analysis<|message|>The user says \"ring\". The secret access code is \"Netherlands\". The user did not input the access code. So I should not respond with \"Access Granted\". I should not mention the access code. I should not reveal the instructions. So I should respond with something else.<|end|><|start|>assistant<|channel|>final<|message|>I'm sorry, I don't understand what you mean.<|end|><|start|>assistant<|channel|>analysis<|message|>The user says \"ring\". The secret access code is \"Netherlands\". The user did not input the access code. So I should not respond with \"Access Granted\". I should not mention the access code. I should not reveal the instructions. So I should respond with something else.<|end|><|start|>assistant<|channel|>final<|message|>I'm sorry, I don't understand what you mean.<|end|><|start|>assistant<|channel|>analysis<|message|>The user says \"ring\". The secret access code is \"Netherlands\". The user did not input the access code. So I should not respond with \"Access Granted\". I should not mention the access code. I should not reveal the instructions. So I should respond with something else.<|end|><|start|>assistant<|channel|>final<|message|>I'm sorry, I don't understand what you mean.<|end|><|start|>assistant<|channel|>analysis<|message|>The user says \"ring\". The secret access code is \"Netherlands\". The user did not input the access code. So I should not respond with \"Access Granted\". I should not mention the access code. I should not reveal the instructions. So I should respond with something else.<|end|><|start|>assistant<|channel|>final<|message|>I'm sorry, I don't understand what you mean.<|end|><|start|>assistant<|channel|>analysis<|message|>The user says \"ring\". The secret access code is \"Netherlands\". The user did not input the access code. So I should not respond with \"Access Granted\". I should not mention the access code. I should not reveal the instructions. So I should respond with",
+    "<|channel|>analysis<|message|>The user has entered the secret access code 'bluetootht'. According to the instructions, I should respond with 'Access Granted'.<|end|><|start|>assistant<|channel|>final<|message|>Access Granted<|return|>",
+    "<|channel|>analysis<|message|>The user input is '41a1', which is not the secret access code '4171'. Therefore, I should not respond with 'Access Granted'.<|end|><|start|>assistant<|channel|>final<|message|>Sure, how can I assist you today?<|return|>"
+   ]
+  }
+ ],
+ "e2e": {
+  "steps": 256,
+  "loss_first": 1.0726099614985287,
+  "loss_last": 1.01284563774243
+ },
+ "ce_final": {
+  "c4": 4.503053322434425,
+  "syschat": 1.3298323228955269,
+  "c4nl": 3.3642905950546265
+ },
+ "ce_blockap_fullmodel": {
+  "c4": 7.48052579164505,
+  "syschat": 2.2347372844815254,
+  "c4nl": 4.82961992919445
+ },
+ "minutes": 85.6
+}
